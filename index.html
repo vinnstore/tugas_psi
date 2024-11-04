@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Resto Abadi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    </style>
+    </head>
+    <body>
+        <h1>Masukan Pesanan Anda</h1>
+        <div class="form-container">
+            <input type="text" id="nama" placeholder="Masukkan pesanan anda" />
+            <button onclick="tampilkanHasil()">Kirim</button>
+        </div>
+
+        <div id="hasil" class="hasil" style="display: none;"></div>
+
+        <nav>
+            <a href="#" id="link1">Menu Restoran Abadi</a>
+        </nav>
+        <div class="popup-overlay" id="popupOverlay"></div>
+        <div class="popup" id="popup">
+            <table class="tableizer-table" align="center">
+                <thead><tr class="tableizer-firstrow"><th>No</th><th>Menu</th><th>Harga</th></tr></thead><tbody>
+                <tr><td>1</td><td>Nasi Goreng</td><td>Rp12.000</td></tr>
+                <tr><td>2</td><td>Mie Ayam</td><td>Rp12.000</td></tr>
+                <tr><td>3</td><td>Basko </td><td>Rp12.000</td></tr>
+                <tr><td>4</td><td>Mie Ayam Bakso</td><td>Rp20.000</td></tr>
+                <tr><td>5</td><td>Kwetiau</td><td>Rp12.000</td></tr>
+                <tr><td>6</td><td>Teh Manis Dingin</td><td>Rp7.000</td></tr>
+                <tr><td>7</td><td>Jus Jeruk</td><td>Rp10.000</td></tr>
+                <tr><td>8</td><td>Jus mangga</td><td>Rp10.000</td></tr>
+                <tr><td>9</td><td>Jus Apel</td><td>Rp10.000</td></tr>
+                <tr><td>10</td><td>Jus Buah Naga</td><td>Rp10.000</td></tr>
+                </tbody></table>
+            
+            <button class="close-btn" id="closePopup">Tutup</button>
+        </div>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
+        <script src="psi.js"></script>
+        </div>
+    </body>
+</html>
